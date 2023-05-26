@@ -9,7 +9,7 @@ max_sent_length = 20
 
 @st.cache(allow_output_mutation=True)
 def load_model():
-    model = tf.keras.models.load_model('SDSFinalweights.best.hdf5')
+    model = tf.keras.models.load_model('cnnmodel.hdf5')
     return model
 
 model = load_model()
